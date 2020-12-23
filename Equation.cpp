@@ -16,7 +16,7 @@ public:
 		b = _b;
 		c = _c;
 	}
-	Equation(const Equation& equation) : //копирующий класс
+	Equation(const Equation& equation) //копирующий конструктор
 	{	
 		a = equation.a;
 		b = equation.b;

@@ -4,7 +4,7 @@
 #include <iostream>
 #include <iomanip>
 #include "Equation.cpp";
-#include "History.cpp";
+// include "History.cpp";
 
 using namespace std;
 
@@ -22,9 +22,9 @@ int main()
 
     equation1.printResult();
     
-    History<Equation<double>> history(&equation);
+    //History<Equation<double>> history(&equation);
 
-    history.save();
+   // history.save();
 }
 
 
