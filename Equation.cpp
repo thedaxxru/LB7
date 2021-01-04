@@ -45,6 +45,15 @@ public:
 		}
 		cout << endl;
 	}
+	void operator*=(T x) {
+		a *= x;
+		b *= x;
+		c *= x;
+	}
+	Equation<T> operator-(T x) {
+		Equation<T> result(a - x, b - x, c - x);
+		return result;
+	}
 
 	T Disc() {
 
@@ -103,7 +112,7 @@ public:
 			cout << "NO RESULT!" << endl;
 		}
 		else if (size == 1) {
-			cout << "x = " << result[0];
+			cout << "x = " << result[0] << endl;
 		}
 		else if (size == 2) {
 			cout << "x1 = " << result[0] << endl;

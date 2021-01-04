@@ -4,23 +4,27 @@
 #include <iostream>
 #include <iomanip>
 #include "Equation.cpp";
-// include "History.cpp";
 
 using namespace std;
 
 int main()
 {
-    Equation<double> equation(-1,2,5);
+   /* Equation<double> equation(1.54,-8.142,16.4);
 
     equation.print();
 
-    equation.printResult();
+    equation.printResult();*/
 
-    Equation<float> equation1(1, 1, 1);
+    Equation<int> equation1(2, 3, -2);
 
     equation1.print();
 
-    equation1.printResult();
+    //equation1.printResult();
+
+    equation1 *= -10;
+    equation1.print();
+    equation1 = equation1- 20;
+    equation1.print();
     
     //History<Equation<double>> history(&equation);
 
